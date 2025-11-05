@@ -1,17 +1,18 @@
-*{
+*{ /* Reset default padding and margin*/
+
     padding: 0%;
     margin: 0%;
 }
 
-header h1, header p, nav a, #home, #about, #projects, #contact, footer p {
+header h1, header p, nav a, #home, #about, #projects, #contact, footer p { /* default font family*/  
     font-family: Arial, sans-serif;
 }
 
-h1, h2 {
+h1, h2 {/*headings font family*/
     font-family: Georgia, serif;
 }
 
-header{
+header{/*header style*/
     background-color: rgb(168, 149, 123);
     color: black;
     text-align: center; 
@@ -19,7 +20,7 @@ header{
     margin: 30px;
     border-radius: 20px;  
 }
-nav{
+nav{/*nav style*/
     text-align: center;
     padding: 20px;
     background-color:blanchedalmond;
@@ -27,12 +28,12 @@ nav{
     border-radius: 20px;
 }
  
-nav a{
+nav a{ /*header style*/
     text-decoration: none;
     color:black;
 }
 
-nav a{
+nav a{/*header style*/
     color: var(--text-color);
     margin-left: 4rem;
     font-weight:500;
@@ -41,12 +42,12 @@ nav a{
 }
 
 nav a:hover,
-nav a.active{
+nav a.active{/*header style additional*/
      color: var(--main-color);
      border-bottom: 3px solid var(--main-color);
 }
 
-#home{
+#home{/* Home Section Styling */
     background-color: palegoldenrod;
     color: black;
     text-align: center; 
@@ -55,7 +56,7 @@ nav a.active{
     border-radius: 20px;
 }
 
-#about, #projects, #contact {
+#about, #projects, #contact {/* About, Projects, and Contact Sections Styling */
     background-color: rgb(223, 217, 155);
     color: black;
     text-align: justify;
@@ -68,12 +69,12 @@ nav a.active{
     vertical-align: top;
 }
 
-main {
+main {/* Main Section Styling */
     text-align: center;
     display: flex;
     justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    gap: 30px;/* Space between items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
     background-color:rgb(194, 177, 105);
 }
 
@@ -81,15 +82,15 @@ main {
     float: none;
 }
 
-#projects ul {
-    list-style-type: none;
+#projects ul {/* Styling for the Projects List */
+    list-style-type: none;/* Remove bullet points */
     padding: 0;
     margin: 0; 
     color:chocolate;
 }
 
 
-footer {
+footer {/* Footer Section Styling */
     background-color: rgb(182, 157, 124);
     padding: 20px;
     text-align: center;
@@ -102,10 +103,9 @@ footer {
     margin: 20px;
 }
 
-#textAnimation:hover{
-    transform: scale(1.05);
+#textAnimation:hover{/* Header Text Animation on Hover */
+    transform: scale(1.05);/* enlarge the text */
     box-shadow: 0 0 50px var(--main-color);
-    transition: 0.3s  ease-in-out;
-    cursor: pointer;
+    transition: 0.3s  ease-in-out;/* transition */
 }
 
